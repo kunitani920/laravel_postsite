@@ -17,6 +17,11 @@ class UserSeeder extends Seeder
           'name' => 'tani',
           'email' => 'tani@example.com',
           'password' => bcrypt('tanikuni')
+          /*20201014
+          なぜusersテーブルにきちんと入ったのか疑問。
+          name = usersテーブルのカラムだから？
+          次の講義を照らし合わせればわかるかも
+          */
       ]);
       // 一般ユーザー
       factory(App\User::class, 50)->create();
