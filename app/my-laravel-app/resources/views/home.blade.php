@@ -16,6 +16,14 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                @if(isset($posts))
+                  
+                  @foreach($posts as $post)
+                    <img src="{{ asset($post->images[0] ->icon) }}" alt="..." class="img-thumbnail">
+                  @endforeach
+                  
+                @endif
             </div>
         </div>
     </div>
